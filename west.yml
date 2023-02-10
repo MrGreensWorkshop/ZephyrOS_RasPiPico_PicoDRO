@@ -1,0 +1,22 @@
+# Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
+# SPDX-License-Identifier: Apache-2.0
+
+manifest:
+  defaults:
+    # select between 'zephyr-rtos' or 'your-zephyr-rtos-fork'
+    remote: zephyr-rtos
+
+  remotes:
+    - name: zephyr-rtos
+      url-base: https://github.com/zephyrproject-rtos
+    - name: your-zephyr-rtos-fork
+      url-base: https://github.com/your-github-account
+
+  projects:
+    - name: zephyr
+      repo-path: zephyr
+      revision: v3.2.0
+      import:
+        name-allowlist:
+          - cmsis
+          - hal_rpi_pico

@@ -1,0 +1,19 @@
+# Intentionally untracked files that Git should ignore
+
+# VS Code
+.vscode/*
+!.vscode/launch.json
+!.vscode/settings.json
+
+# Build folder
+/build*
+
+# Python
+.venv
+__pycache__
+
+# macOS
+.DS_Store
+
+# Backup files
+*.bak

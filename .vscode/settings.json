@@ -1,0 +1,26 @@
+/*
+ * Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+{
+    "cortex-debug.openocdPath": "${env:HOME}/openocd/src/openocd",
+    // - Settings below are only needed for freestanding applications.
+    // - For workspace applications, you should comment out these lines.
+    // - Please comment out ZEPHYR_EXTRA_MODULES if your application does not have Zephyr modules.
+    // - Tested on Linux (Ubuntu 22.04), macOS (Ventura 13.2), and Windows (10).
+/*
+    "terminal.integrated.env.osx": {
+        "PATH": "$HOME/zephyrproject/zephyr/scripts",
+        "ZEPHYR_BASE": "${env:HOME}/zephyrproject/zephyr",
+    },
+    "terminal.integrated.env.linux": {
+        "PATH": "$HOME/zephyrproject/zephyr/scripts:${env:PATH}",
+        "ZEPHYR_BASE": "${env:HOME}/zephyrproject/zephyr",
+    },
+    "terminal.integrated.env.windows": {
+        "PATH": "${env:USERPROFILE}\\zephyrproject\\zephyr\\scripts;${env:PATH}",
+        "ZEPHYR_BASE": "${env:USERPROFILE}\\zephyrproject\\zephyr",
+    },
+*/
+}

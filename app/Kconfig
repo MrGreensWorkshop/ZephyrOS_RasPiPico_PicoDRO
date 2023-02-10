@@ -1,0 +1,27 @@
+# Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
+# SPDX-License-Identifier: Apache-2.0
+
+#
+# Set the main menu title
+# Check out the docs:
+# https://docs.zephyrproject.org/latest/develop/application/index.html#application-cmakelists-txt
+# https://docs.zephyrproject.org/latest/build/kconfig/menuconfig.html
+#
+mainmenu "DRO application"
+
+#
+# Zephyr configuration options
+# Source the Kconfig.zephyr in the Zephyr root directory.
+# Check out the docs: https://docs.zephyrproject.org/latest/develop/application/index.html#application-cmakelists-txt
+#
+menu "Zephyr"
+source "Kconfig.zephyr"
+endmenu
+
+#
+# Set the module name for logging
+# Check out the docs: https://docs.zephyrproject.org/latest/services/logging/index.html#logging-in-a-module
+#
+module = MAIN
+module-str = main
+source "subsys/logging/Kconfig.template.log_config"

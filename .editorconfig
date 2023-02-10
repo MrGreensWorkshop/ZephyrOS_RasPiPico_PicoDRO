@@ -1,0 +1,100 @@
+# EditorConfig  https://editorconfig.org/
+# for VS Code or Notepad++ install plugin called EditorConfig
+
+# top-most EditorConfig file
+root = true
+
+# Matches any string of characters, except path separators
+[*]
+
+# Unix-style newlines with a newline ending every file
+# control how line breaks are represented.
+end_of_line = lf
+
+# ensure file ends with a newline
+insert_final_newline = true
+
+# remove any whitespace characters preceding newline characters
+trim_trailing_whitespace = true
+
+# Set default charset
+charset = utf-8
+
+# below the options taken form : https://github.com/zephyrproject-rtos/zephyr/blob/main/.editorconfig
+# indent_size may varies for better view
+
+# Assembly
+[*.S]
+indent_style = tab
+indent_size = 4
+
+# C
+[*.{c,h}]
+indent_style = tab
+indent_size = 4
+
+# C++
+[*.{cpp,hpp}]
+indent_style = tab
+indent_size = 4
+
+# Linker Script
+[*.ld]
+indent_style = tab
+indent_size = 4
+
+# Python
+[*.py]
+indent_style = space
+indent_size = 4
+
+# Perl
+[*.pl]
+indent_style = tab
+indent_size = 4
+
+# reStructuredText
+[*.rst]
+indent_style = space
+indent_size = 3
+
+# YAML
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2
+
+# Shell Script
+[*.sh]
+indent_style = space
+indent_size = 4
+
+# Windows Command Script
+[*.cmd]
+end_of_line = crlf
+indent_style = tab
+indent_size = 4
+
+# Valgrind Suppression File
+[*.supp]
+indent_style = space
+indent_size = 3
+
+# CMake
+[{CMakeLists.txt,*.cmake}]
+indent_style = space
+indent_size = 2
+
+# Makefile
+[Makefile]
+indent_style = tab
+indent_size = 4
+
+# Device tree
+[*.{dts,dtsi,overlay}]
+indent_style = tab
+indent_size = 4
+
+# Kconfig
+[Kconfig*]
+indent_style = tab
+indent_size = 4
