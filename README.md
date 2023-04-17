@@ -20,7 +20,7 @@ Everything is covered in [the video above](https://youtu.be/t3nBOYfJrb8) and in 
 
   The build command is the same for both application types. Run the commands below within the `ZephyrOS_RasPiPico_PicoDRO` directory. For more about west command, please check [the link](https://docs.zephyrproject.org/latest/develop/west/build-flash-debug.html).
 
-  The default console is UART0.
+  The default console is set to USB CDC.
 
   - Build the app
 
@@ -34,16 +34,16 @@ Everything is covered in [the video above](https://youtu.be/t3nBOYfJrb8) and in 
     west build app -p -- -DOVERLAY_CONFIG="debug.conf"
     ```
 
-  - Build the app with USB configuration
+  - Build the app with UART configuration
 
     ```shell
-    west build app -p -- -DOVERLAY_CONFIG="usb.conf" -DDTC_OVERLAY_FILE="usb.overlay"
+    west build app -p -- -DUSE_USB_CONSOLE="OFF"
     ```
 
-  - Build the app with USB & debug configuration (LOG output)
+  - Build the app with UART & debug configuration (LOG output)
 
     ```shell
-    west build app -p -- -DOVERLAY_CONFIG="usb.conf;debug.conf" -DDTC_OVERLAY_FILE="usb.overlay"
+    west build app -p -- -DUSE_USB_CONSOLE="OFF" -DOVERLAY_CONFIG="debug.conf"
     ```
 
 ### You Can Support My Work
