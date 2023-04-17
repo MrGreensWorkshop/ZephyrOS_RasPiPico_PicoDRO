@@ -1,0 +1,19 @@
+/*
+ * Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+// Use USB CDC as console output.
+// Check out the docs: https://docs.zephyrproject.org/latest/services/usb/uds_cdc_acm.html#console-over-cdc-acm-uart
+/ {
+	chosen {
+		zephyr,console = &usb_cdc;
+	};
+};
+
+&zephyr_udc0 {
+	usb_cdc: usb_cdc_0 {
+		compatible = "zephyr,cdc-acm-uart";
+	};
+};

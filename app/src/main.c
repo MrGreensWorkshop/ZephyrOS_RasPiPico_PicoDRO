@@ -16,6 +16,7 @@ void main(void) {
 	while (1) {
 		// For debugging purpose
 		printf("Hello World!\n");
+		LOG_DBG("Log test");
 		k_sleep(K_MSEC(1000));
 	}
 }

@@ -11,10 +11,10 @@
 ---
 
 <div align="center">
-  <a href="https://youtu.be/BRXiIOI6aO8"><img src="docs/video_pic.jpg" max-height="250" alt="Zephyr RTOS Tutorials with Raspberry Pi Pico"></a>
+  <a href="https://youtu.be/t3nBOYfJrb8"><img src="docs/video_pic.jpg" max-height="250" alt="Zephyr RTOS Tutorials with Raspberry Pi Pico"></a>
 </div>
 
-Everything is covered in [the video above](https://youtu.be/BRXiIOI6aO8) and in this [blog post](https://www.mrgreensworkshop.com/posts/2023-03-24-raspberry-pi-pico-zephyr-rtos-picodro). Please watch all [Zephyr RTOS Tutorial videos](https://www.youtube.com/playlist?list=PLAymxPbYHgl-FZSggEx_lRJoPU2h4tT36) to make more sense of this one.
+Everything is covered in [the video above](https://youtu.be/t3nBOYfJrb8) and in this [blog post](https://www.mrgreensworkshop.com/posts/2023-03-24-raspberry-pi-pico-zephyr-rtos-picodro). Please watch all [Zephyr RTOS Tutorial videos](https://www.youtube.com/playlist?list=PLAymxPbYHgl-FZSggEx_lRJoPU2h4tT36) to make more sense of this one.
 
 #### Build commands (tag-specific)
 
@@ -32,6 +32,18 @@ Everything is covered in [the video above](https://youtu.be/BRXiIOI6aO8) and in 
 
     ```shell
     west build app -p -- -DOVERLAY_CONFIG="debug.conf"
+    ```
+
+  - Build the app with USB configuration
+
+    ```shell
+    west build app -p -- -DOVERLAY_CONFIG="usb.conf" -DDTC_OVERLAY_FILE="usb.overlay"
+    ```
+
+  - Build the app with USB & debug configuration (LOG output)
+
+    ```shell
+    west build app -p -- -DOVERLAY_CONFIG="usb.conf;debug.conf" -DDTC_OVERLAY_FILE="usb.overlay"
     ```
 
 ### You Can Support My Work
