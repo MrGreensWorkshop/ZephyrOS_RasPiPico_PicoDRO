@@ -63,7 +63,3 @@ Since this is source code for a tutorial, I disabled the Issues tab. If you trul
 As it says in the [Apache License 2.0](https://github.com/MrGreensWorkshop/ZephyrOS_RasPiPico_PicoDRO/blob/main/LICENSE.txt), you can use my code anywhere as long as you include the license file and copyright notice. Also, state if you make any changes.
 
 `Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com`
-
-Please add link to my page so I can get credit for my work.
-
-Thank you!
